@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173b70">
+<title>SIKAP | Kelas 9C — SMPN 3 Soreang</title>
+<style>
+:root{--navy:#173b70;--blue:#3478c9;--sky:#eaf3ff;--ink:#17263c;--muted:#68778d;--line:#e1e8f0;--bg:#f5f8fc;--white:#fff;--green:#16865c;--orange:#c57b12;--red:#c44747}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{min-height:100vh}.topbar{background:var(--white);border-bottom:1px solid var(--line);padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;position:sticky;top:0;z-index:5}.brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;border-radius:14px;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:23px;font-weight:800}.brand h1{font-size:20px;margin:0;color:var(--navy);letter-spacing:.4px}.brand p{margin:1px 0 0;color:var(--muted);font-size:12px}.clock{text-align:right;font-size:13px;color:var(--muted)}.clock strong{display:block;color:var(--navy);font-size:14px}.layout{display:grid;grid-template-columns:235px 1fr;max-width:1500px;margin:auto}.sidebar{padding:20px 14px;border-right:1px solid var(--line);background:#fff;min-height:calc(100vh - 81px)}.navlabel{font-size:11px;font-weight:800;letter-spacing:1px;color:#93a0b2;padding:8px 12px}.navbtn{display:flex;align-items:center;gap:11px;width:100%;border:0;background:transparent;padding:11px 12px;border-radius:10px;color:#526178;text-align:left;margin:3px 0}.navbtn:hover,.navbtn.active{background:var(--sky);color:var(--navy);font-weight:700}.navbtn .ico{width:22px;text-align:center}.sidebar-note{margin:22px 6px 0;padding:12px;background:#f5f8fc;border:1px solid var(--line);border-radius:12px;font-size:12px;color:var(--muted)}main{padding:26px;min-width:0}.welcome{display:flex;justify-content:space-between;align-items:flex-start;gap:15px;margin-bottom:22px}.welcome h2{margin:0 0 5px;font-size:25px;color:var(--navy)}.welcome p{margin:0;color:var(--muted)}.tag{display:inline-flex;align-items:center;gap:6px;border-radius:99px;padding:6px 10px;background:#fff0d8;color:#87590b;font-size:12px;font-weight:700;border:1px solid #f0ddb9}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:18px}.stat,.panel{background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:0 3px 12px #173b7008}.stat{padding:17px}.stat-head{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px}.stat-icon{width:36px;height:36px;display:grid;place-items:center;border-radius:11px;background:var(--sky);color:var(--blue);font-size:18px}.stat strong{display:block;font-size:28px;color:var(--navy);margin-top:12px}.stat small{color:var(--muted)}.columns{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.panel{padding:19px;margin-bottom:16px;min-width:0}.panelhead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}.panel h3{font-size:16px;margin:0;color:var(--navy)}.muted{color:var(--muted)}.small{font-size:12px}.btn{border:1px solid var(--line);background:#fff;color:var(--navy);padding:9px 13px;border-radius:9px;font-weight:650}.btn.primary{background:var(--navy);color:#fff;border-color:var(--navy)}.btn.light{background:var(--sky);border-color:#d6e6fb}.btn.danger{color:var(--red)}.btn:disabled{opacity:.5;cursor:not-allowed}.list{display:grid;gap:10px}.listitem{display:flex;align-items:flex-start;gap:11px;padding:11px 0;border-bottom:1px solid #eef2f7}.listitem:last-child{border:0}.bullet{width:36px;height:36px;border-radius:10px;background:var(--sky);display:grid;place-items:center;flex-shrink:0}.listitem strong{display:block;font-size:14px}.listitem p{margin:3px 0 0;color:var(--muted);font-size:12px}.daygrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.day{padding:12px;border:1px solid var(--line);border-radius:11px}.day.today{border-color:var(--blue);background:#f0f7ff}.day strong{display:block;color:var(--navy);font-size:13px}.day span{font-size:12px;color:var(--muted)}.page{display:none}.page.active{display:block}.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:11px}table{border-collapse:collapse;width:100%;min-width:580px;background:#fff}th,td{text-align:left;padding:12px 13px;border-bottom:1px solid #edf1f6;font-size:13px}th{background:#f7f9fc;color:#68778d;font-size:11px;text-transform:uppercase;letter-spacing:.5px}tr:last-child td{border-bottom:0}.pill{display:inline-block;border-radius:99px;padding:4px 8px;font-size:11px;font-weight:700;background:#edf8f2;color:var(--green)}.pill.demo{background:#fff0d8;color:#87590b}.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:14px}.field{padding:10px 12px;border:1px solid #d7e0eb;border-radius:9px;background:#fff;min-width:0;max-width:100%;color:var(--ink)}.toolbar .field{flex:1;min-width:140px}.empty{padding:28px;text-align:center;color:var(--muted)}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.formgrid label{display:grid;gap:5px;font-size:12px;color:var(--muted)}.formgrid .wide{grid-column:1/-1}.formgrid input,.formgrid select,.formgrid textarea{width:100%;padding:10px;border:1px solid #d7e0eb;border-radius:9px;background:#fff;color:var(--ink)}.notice{padding:12px 14px;border-radius:10px;background:#fff8e9;border:1px solid #f2dfb8;color:#79551a;font-size:13px;margin-bottom:16px}.notice.info{background:#eff6ff;border-color:#d5e7ff;color:#24538a}.galleryplaceholder{min-height:155px;border:1px dashed #bdcde1;border-radius:13px;background:linear-gradient(135deg,#f4f8ff,#eaf3ff);display:grid;place-items:center;text-align:center;padding:20px;color:#59708d}.mobile-nav{display:none}.footer{padding:15px 0 5px;color:#8a96a8;font-size:11px;text-align:center}.hidden{display:none!important}
+@media(max-width:950px){.layout{grid-template-columns:1fr}.sidebar{display:none}.mobile-nav{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:8;background:#fff;border-top:1px solid var(--line);justify-content:space-around;padding:7px 3px calc(7px + env(safe-area-inset-bottom));overflow-x:auto}.mobile-nav .navbtn{display:grid;justify-items:center;gap:2px;padding:7px 9px;margin:0;min-width:62px;font-size:10px}.mobile-nav .ico{font-size:18px}.mobile-nav .navlabel{display:none}main{padding:20px 15px 95px}.topbar{padding:12px 15px}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.columns{grid-template-columns:1fr}.clock{font-size:11px}.clock strong{font-size:12px}}
+@media(max-width:480px){.brand h1{font-size:18px}.brand p{font-size:11px}.logo{width:42px;height:42px}.welcome h2{font-size:22px}.stats{gap:9px}.stat{padding:13px}.stat strong{font-size:25px}.stat-head{font-size:12px}.stat-icon{width:31px;height:31px}.daygrid{grid-template-columns:repeat(2,minmax(0,1fr))}.formgrid{grid-template-columns:1fr}.formgrid .wide{grid-column:auto}.tag{font-size:10px}}
+
+/* Penyempurnaan visual SIKAP: animasi halus, tombol lebih nyaman, dan tata letak konsisten */
+:root{--radius-card:18px;--ease-ui:cubic-bezier(.2,.75,.25,1)}
+html{scroll-behavior:smooth}
+body{letter-spacing:.05px;-webkit-tap-highlight-color:transparent}
+button,.btn,.navbtn,.field,.panel,.stat,.day,.listitem,.logo{transition:background-color .22s var(--ease-ui),color .22s var(--ease-ui),border-color .22s var(--ease-ui),box-shadow .22s var(--ease-ui),transform .22s var(--ease-ui)}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #8dbdff;outline-offset:2px}
+.topbar{box-shadow:0 5px 22px #173b7008;backdrop-filter:saturate(140%)}
+.logo{box-shadow:0 7px 16px #173b7026;background:linear-gradient(145deg,#214d89,#173b70)}
+.logo:hover{transform:rotate(-4deg) scale(1.04)}
+.navbtn{min-height:46px;font-size:14px;font-weight:600;position:relative;overflow:hidden}
+.navbtn .ico{width:28px;height:28px;display:inline-grid;place-items:center;border-radius:9px;background:#f1f5fb;font-size:17px;flex-shrink:0}
+.navbtn:hover{transform:translateX(2px);background:#f1f6ff}
+.navbtn.active{background:linear-gradient(100deg,#e8f2ff,#f4f8ff);box-shadow:inset 3px 0 0 var(--blue)}
+.navbtn.active .ico{background:#d7e9ff;box-shadow:0 2px 7px #3478c91c}
+.stat,.panel{border-radius:var(--radius-card);box-shadow:0 5px 18px #173b7009}
+.stat:hover,.panel:hover{box-shadow:0 12px 28px #173b7010;transform:translateY(-2px)}
+.stat{padding:19px}
+.stat-icon{width:42px;height:42px;border-radius:13px}
+.panel{padding:21px}
+.btn{min-height:42px;padding:10px 16px;border-radius:11px;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:8px;line-height:1.25;white-space:normal}
+.btn:hover{transform:translateY(-1px);box-shadow:0 5px 12px #173b7014}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn.primary{background:linear-gradient(135deg,#214d89,#173b70);box-shadow:0 4px 10px #173b701c}
+.btn.primary:hover{box-shadow:0 7px 16px #173b7030}
+.field,.formgrid input,.formgrid select,.formgrid textarea{min-height:44px;border-radius:11px;transition:border-color .2s,box-shadow .2s}
+.field:focus,.formgrid input:focus,.formgrid select:focus,.formgrid textarea:focus{outline:none;border-color:#75a7e9;box-shadow:0 0 0 3px #3478c91a}
+.page.active{animation:pageIn .34s var(--ease-ui) both}
+@keyframes pageIn{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+.stat,.panel,.day{animation:softIn .38s var(--ease-ui) both}
+@keyframes softIn{from{opacity:.65;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.day{border-radius:14px;background:#fff;padding:14px}
+.day:hover{border-color:#b7d3f5;transform:translateY(-2px);box-shadow:0 7px 16px #173b700d}
+.day.today{box-shadow:inset 0 0 0 1px #b7d3f5;background:linear-gradient(135deg,#edf6ff,#f8fbff)}
+.bullet{width:40px;height:40px;border-radius:13px;font-size:18px}
+.listitem{padding:13px 0;gap:13px}
+.tablewrap{border-radius:13px;box-shadow:0 3px 12px #173b7008}
+th{padding-top:14px;padding-bottom:14px}
+td .btn{min-height:38px;padding:8px 12px}
+.tag{min-height:32px}
+#modal{animation:modalIn .22s var(--ease-ui)}
+#modal::backdrop{background:#102b4c55;backdrop-filter:blur(3px)}
+@keyframes modalIn{from{opacity:0;transform:translateY(8px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+.mobile-nav{gap:4px;padding:8px 8px calc(8px + env(safe-area-inset-bottom));box-shadow:0 -8px 25px #173b7010;scrollbar-width:thin;scrollbar-color:#c8d9ee transparent}
+.mobile-nav .navbtn{display:inline-flex;flex-direction:row;justify-content:flex-start;align-items:center;gap:7px;min-width:max-content;min-height:46px;padding:9px 12px;border-radius:12px;font-size:12px;white-space:nowrap}
+.mobile-nav .navbtn .ico{width:26px;height:26px;font-size:15px}
+.mobile-nav .navbtn.active{box-shadow:inset 0 -3px 0 var(--blue)}
+@media(max-width:950px){main{padding:22px 16px 100px}.mobile-nav{justify-content:flex-start}.mobile-nav .navbtn:hover{transform:translateY(-1px)}}
+@media(max-width:480px){.topbar{gap:8px}.brand{gap:9px}.brand p{max-width:230px;line-height:1.3}.clock{min-width:75px}.welcome{align-items:flex-start}.welcome .btn{max-width:48%}.welcome h2{line-height:1.25}.panel{padding:16px}.stat{padding:14px}.btn{min-height:44px;padding:11px 14px}.mobile-nav .navbtn{min-height:46px;padding:9px 11px}.mobile-nav .navbtn .ico{width:27px;height:27px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+
+/* SIKAP Liquid Glass: aurora wallpaper + frosted-glass surfaces, tetap ringan tanpa gambar eksternal */
+:root{
+  --glass-border:rgba(255,255,255,.64);
+  --glass-fill:rgba(255,255,255,.60);
+  --glass-fill-strong:rgba(255,255,255,.76);
+  --glass-shadow:0 12px 34px rgba(34,59,105,.10),inset 0 1px 0 rgba(255,255,255,.72);
+  --glass-blur:blur(22px) saturate(155%);
+}
+html{background:#e8efff}
+body{background:transparent;isolation:isolate;min-height:100vh}
+body::before{
+  content:"";position:fixed;inset:-8%;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(ellipse at 12% 16%,rgba(112,176,255,.72) 0%,rgba(112,176,255,0) 34%),
+    radial-gradient(ellipse at 83% 14%,rgba(202,155,255,.65) 0%,rgba(202,155,255,0) 32%),
+    radial-gradient(ellipse at 76% 78%,rgba(107,224,214,.55) 0%,rgba(107,224,214,0) 34%),
+    radial-gradient(ellipse at 20% 84%,rgba(255,183,211,.52) 0%,rgba(255,183,211,0) 32%),
+    linear-gradient(135deg,#dceaff 0%,#f4eaff 48%,#dcf8f4 100%);
+  background-size:140% 140%;animation:auroraDrift 26s ease-in-out infinite alternate;
+}
+.app{position:relative;z-index:1;min-height:100vh}
+@keyframes auroraDrift{0%{background-position:0% 0%}50%{background-position:70% 30%}100%{background-position:100% 100%}}
+.topbar,.sidebar,.mobile-nav{
+  background:rgba(255,255,255,.58)!important;
+  border-color:rgba(255,255,255,.68)!important;
+  -webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);
+}
+.topbar{box-shadow:0 8px 30px rgba(40,65,115,.09),inset 0 -1px 0 rgba(255,255,255,.5)!important}
+.sidebar{border-right:1px solid rgba(255,255,255,.58)!important}
+.sidebar-note,.stat,.panel,.day,.tablewrap,.galleryplaceholder{
+  background:rgba(255,255,255,.57)!important;
+  border:1px solid var(--glass-border)!important;
+  -webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);
+  box-shadow:var(--glass-shadow)!important;
+}
+.stat,.panel,.day,.sidebar-note,.tablewrap,.galleryplaceholder{position:relative;overflow:hidden}
+.stat::before,.panel::before,.day::before{
+  content:"";position:absolute;left:12%;right:12%;top:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.98),transparent);pointer-events:none;
+}
+.stat:hover,.panel:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(34,59,105,.14),inset 0 1px 0 rgba(255,255,255,.8)!important}
+.navbtn{color:#3d506f}
+.navbtn .ico{background:rgba(255,255,255,.62)!important;border:1px solid rgba(255,255,255,.78);box-shadow:0 3px 10px rgba(40,65,115,.06)}
+.navbtn:hover,.navbtn.active{background:rgba(255,255,255,.72)!important;color:#173b70;box-shadow:0 5px 15px rgba(48,79,133,.08)}
+.navbtn.active .ico{background:linear-gradient(145deg,rgba(255,255,255,.95),rgba(194,222,255,.82))!important}
+.logo{background:linear-gradient(145deg,rgba(35,83,148,.95),rgba(23,59,112,.9))!important;border:1px solid rgba(255,255,255,.55);box-shadow:0 8px 24px rgba(23,59,112,.22),inset 0 1px 0 rgba(255,255,255,.35)!important}
+.stat-icon,.bullet{background:linear-gradient(145deg,rgba(255,255,255,.92),rgba(207,228,255,.72))!important;border:1px solid rgba(255,255,255,.85);box-shadow:0 4px 12px rgba(43,82,145,.08)}
+.btn{background:rgba(255,255,255,.64);border-color:rgba(255,255,255,.86);box-shadow:0 4px 14px rgba(35,62,108,.06),inset 0 1px 0 rgba(255,255,255,.85);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.btn:hover{background:rgba(255,255,255,.86);box-shadow:0 8px 20px rgba(35,62,108,.12)}
+.btn.primary{background:linear-gradient(135deg,rgba(45,104,181,.96),rgba(23,59,112,.96));border-color:rgba(255,255,255,.55);box-shadow:0 7px 18px rgba(23,59,112,.20),inset 0 1px 0 rgba(255,255,255,.22)}
+.btn.primary:hover{background:linear-gradient(135deg,#3f83d0,#204d88)}
+.btn.light{background:rgba(220,236,255,.7);border-color:rgba(255,255,255,.85)}
+.btn.danger{background:rgba(255,245,246,.66)}
+.field,.formgrid input,.formgrid select,.formgrid textarea{
+  background:rgba(255,255,255,.68)!important;border-color:rgba(255,255,255,.9)!important;
+  box-shadow:inset 0 1px 3px rgba(37,63,105,.035);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+}
+.field:focus,.formgrid input:focus,.formgrid select:focus,.formgrid textarea:focus{background:rgba(255,255,255,.9)!important;box-shadow:0 0 0 3px rgba(76,139,220,.16)!important}
+.tablewrap{overflow:auto}
+table{background:transparent!important}
+th{background:rgba(225,237,255,.68)!important}
+td{background:rgba(255,255,255,.18)}
+th,td{border-bottom-color:rgba(255,255,255,.68)!important}
+.day{background:rgba(255,255,255,.54)!important}
+.day.today{background:linear-gradient(135deg,rgba(216,235,255,.8),rgba(255,255,255,.66))!important;border-color:rgba(255,255,255,.95)!important}
+.notice{background:rgba(255,248,231,.72)!important;border-color:rgba(255,255,255,.8)!important;box-shadow:0 7px 20px rgba(75,69,40,.04);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+.notice.info{background:rgba(231,243,255,.74)!important;border-color:rgba(255,255,255,.82)!important}
+.tag,.pill,.pill.demo{box-shadow:inset 0 1px 0 rgba(255,255,255,.72);border-color:rgba(255,255,255,.82)}
+.listitem{border-bottom-color:rgba(255,255,255,.7)}
+#modal{background:rgba(246,250,255,.78);border:1px solid rgba(255,255,255,.88)!important;-webkit-backdrop-filter:blur(26px) saturate(160%);backdrop-filter:blur(26px) saturate(160%);box-shadow:0 28px 90px rgba(25,44,82,.25),inset 0 1px 0 rgba(255,255,255,.95)!important}
+#modal::backdrop{background:rgba(35,49,78,.25);-webkit-backdrop-filter:blur(9px);backdrop-filter:blur(9px)}
+.mobile-nav{box-shadow:0 -10px 35px rgba(35,62,108,.12)!important}
+.mobile-nav .navbtn{background:rgba(255,255,255,.36)}
+.mobile-nav .navbtn.active{background:rgba(255,255,255,.8)!important;box-shadow:inset 0 -3px 0 #3478c9,0 3px 10px rgba(35,62,108,.06)}
+.galleryplaceholder{background:linear-gradient(135deg,rgba(255,255,255,.62),rgba(211,231,255,.55))!important}
+.footer{color:#536985}
+#toast{box-shadow:0 12px 30px rgba(14,35,69,.25),inset 0 1px 0 rgba(255,255,255,.18)!important}
+@media(max-width:950px){body::before{background-size:180% 180%}.topbar{background:rgba(255,255,255,.66)!important}.mobile-nav{background:rgba(246,249,255,.68)!important}}
+@media(prefers-reduced-motion:reduce){body::before{animation:none}}
+
+</style>
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+  <div class="brand"><div class="logo">S</div><div><h1>SIKAP <span style="font-size:13px;color:#3478c9">· Kelas 9C</span></h1><p>SMPN 3 Soreang · Sistem Informasi Kelas dan Administrasi Ketertiban</p></div></div>
+  <div class="clock"><strong id="clock">Memuat waktu…</strong><span id="date"></span></div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sideNav"></aside>
+<main>
+<section class="page active" id="page-dashboard">
+  <div class="welcome"><div><h2>Dashboard Kelas 9C</h2><p>Ringkasan informasi kelas dalam satu tempat</p></div><span class="tag">● MODE DEMO</span></div>
+  <div class="notice"><strong>Perhatian:</strong> Ini adalah versi awal DEMO. Data di halaman ini hanya contoh dan tersimpan di browser perangkat ini. Belum digunakan untuk administrasi siswa sungguhan.</div>
+  <div class="stats">
+    <div class="stat"><div class="stat-head">Siswa terdaftar <span class="stat-icon">♙</span></div><strong id="statStudents">0</strong><small>Data contoh</small></div>
+    <div class="stat"><div class="stat-head">Hadir hari ini <span class="stat-icon">✓</span></div><strong id="statPresent">0</strong><small>Belum ada data absensi asli</small></div>
+    <div class="stat"><div class="stat-head">Catatan pembinaan <span class="stat-icon">▤</span></div><strong id="statCases">0</strong><small>Akses perlu dibatasi</small></div>
+    <div class="stat"><div class="stat-head">Pengumuman aktif <span class="stat-icon">⚑</span></div><strong id="statAnnouncements">0</strong><small>Informasi kelas</small></div>
+  </div>
+  <div class="columns">
+    <div>
+      <div class="panel"><div class="panelhead"><h3>Pengumuman terbaru</h3><button class="btn light" onclick="go('announcements')">Lihat semua</button></div><div class="list" id="dashboardAnnouncements"></div></div>
+      <div class="panel"><div class="panelhead"><h3>Ketertiban dan kebersihan</h3><span class="muted small">Checklist kelas</span></div><div class="list" id="dashboardOrder"></div></div>
+    </div>
+    <div>
+      <div class="panel"><div class="panelhead"><h3>Jadwal piket</h3><span class="muted small">Mingguan</span></div><div class="daygrid" id="dashboardPiket"></div></div>
+      <div class="panel"><div class="panelhead"><h3>Pembaruan terbaru</h3></div><div class="list" id="dashboardActivity"></div></div>
+    </div>
+  </div>
+</section>
+<section class="page" id="page-students"><div class="welcome"><div><h2>Data Siswa</h2><p>Daftar siswa kelas 9C</p></div><button class="btn primary" onclick="openStudentForm()">+ Tambah siswa</button></div><div class="notice info">Gunakan data fiktif untuk mencoba fitur. Jangan masukkan NISN atau data pribadi asli ke versi DEMO.</div><div class="panel"><div class="toolbar"><input class="field" id="studentSearch" placeholder="Cari nama siswa…" oninput="renderStudents()"><select class="field" id="studentStatus" onchange="renderStudents()"><option value="">Semua status</option><option>Aktif</option><option>Nonaktif</option></select></div><div class="tablewrap"><table><thead><tr><th>Nama siswa</th><th>Kelas</th><th>Status</th><th>Aksi</th></tr></thead><tbody id="studentRows"></tbody></table></div></div></section>
+<section class="page" id="page-attendance"><div class="welcome"><div><h2>Absensi</h2><p>Rekap kehadiran berdasarkan tanggal</p></div></div><div class="notice">Versi DEMO: data absensi tidak tersinkron ke perangkat lain. Fitur ini belum memiliki login atau otorisasi server.</div><div class="panel"><div class="toolbar"><input class="field" type="date" id="attendanceDate"><button class="btn primary" onclick="openAttendanceForm()">+ Catat absensi</button></div><div class="stats" style="margin-bottom:14px"><div class="stat"><div class="stat-head">Hadir</div><strong id="aHadir">0</strong></div><div class="stat"><div class="stat-head">Sakit</div><strong id="aSakit">0</strong></div><div class="stat"><div class="stat-head">Izin</div><strong id="aIzin">0</strong></div><div class="stat"><div class="stat-head">Alpa</div><strong id="aAlpa">0</strong></div></div><div class="tablewrap"><table><thead><tr><th>Nama</th><th>Tanggal</th><th>Status</th><th>Aksi</th></tr></thead><tbody id="attendanceRows"></tbody></table></div></div></section>
+<section class="page" id="page-violations"><div class="welcome"><div><h2>Catatan Pembinaan</h2><p>Catatan internal untuk evaluasi dan tindak lanjut</p></div><button class="btn primary" onclick="openViolationForm()">+ Tambah catatan</button></div><div class="notice">Privasi: jangan gunakan versi DEMO untuk menyimpan pelanggaran siswa sungguhan. Di versi online, catatan ini harus dibatasi untuk petugas berwenang.</div><div class="panel"><div class="toolbar"><input class="field" id="violationSearch" placeholder="Cari siswa atau kategori…" oninput="renderViolations()"></div><div class="tablewrap"><table><thead><tr><th>Siswa</th><th>Tanggal</th><th>Kategori</th><th>Catatan objektif</th><th>Aksi</th></tr></thead><tbody id="violationRows"></tbody></table></div></div></section>
+<section class="page" id="page-piket"><div class="welcome"><div><h2>Jadwal Piket</h2><p>Pembagian tugas kebersihan kelas</p></div><button class="btn primary" onclick="openPiketForm()">+ Atur jadwal</button></div><div class="panel"><div class="daygrid" id="piketGrid"></div></div><div class="panel"><h3>Contoh tugas kebersihan</h3><div class="list"><div class="listitem"><div class="bullet">✓</div><div><strong>Menyapu lantai</strong><p>Pastikan lantai bersih sebelum pulang</p></div></div><div class="listitem"><div class="bullet">▤</div><div><strong>Merapikan meja dan kursi</strong><p>Susun kembali sesuai tata letak kelas</p></div></div><div class="listitem"><div class="bullet">✎</div><div><strong>Membersihkan papan tulis</strong><p>Hapus tulisan setelah kegiatan selesai</p></div></div></div></div></section>
+<section class="page" id="page-order"><div class="welcome"><div><h2>Ketertiban Kelas</h2><p>Evaluasi kondisi kelas dengan indikator jelas</p></div><button class="btn primary" onclick="openOrderForm()">+ Evaluasi</button></div><div class="panel"><div class="list" id="orderList"></div></div></section>
+<section class="page" id="page-announcements"><div class="welcome"><div><h2>Pengumuman</h2><p>Informasi kegiatan dan pemberitahuan kelas</p></div><button class="btn primary" onclick="openAnnouncementForm()">+ Buat pengumuman</button></div><div class="panel"><div class="toolbar"><input class="field" id="announcementSearch" placeholder="Cari pengumuman…" oninput="renderAnnouncements()"></div><div class="list" id="announcementList"></div></div></section>
+<section class="page" id="page-gallery"><div class="welcome"><div><h2>Galeri Kelas</h2><p>Dokumentasi kegiatan kelas 9C</p></div><button class="btn primary" onclick="document.getElementById('photoInput').click()">+ Pilih foto</button></div><div class="notice">Tambahkan hanya foto yang penggunaannya telah mendapat izin yang diperlukan. Foto DEMO disimpan di browser dan tidak diunggah ke server.</div><input id="photoInput" type="file" accept="image/*" multiple class="hidden" onchange="addPhotos(event)"><div id="galleryGrid" class="daygrid" style="grid-template-columns:repeat(auto-fit,minmax(190px,1fr))"></div></section>
+<section class="page" id="page-reports"><div class="welcome"><div><h2>Laporan</h2><p>Ringkasan data pada perangkat ini</p></div></div><div class="panel"><h3>Ekspor laporan DEMO</h3><p class="muted">Unduh CSV untuk pemeriksaan contoh. File tidak menggantikan backup database terpusat.</p><div class="toolbar"><button class="btn primary" onclick="exportCSV('students')">Ekspor data siswa</button><button class="btn" onclick="exportCSV('attendance')">Ekspor absensi</button><button class="btn" onclick="exportCSV('violations')">Ekspor catatan pembinaan</button></div></div><div class="panel"><h3>Pengaturan dan status</h3><p><span class="pill demo">DEMO LOKAL</span> <span class="muted">Belum terhubung ke database online</span></p><p class="muted small">Agar siap digunakan bersama, tahap berikutnya adalah konfigurasi Supabase Auth, PostgreSQL, RLS, dan Storage.</p><button class="btn danger" onclick="resetDemo()">Reset seluruh data DEMO</button></div></section>
+<div class="footer">SIKAP · Kelas 9C · SMPN 3 Soreang — Versi awal DEMO</div>
+</main></div><nav class="mobile-nav" id="mobileNav"></nav></div>
+<dialog id="modal" style="border:0;border-radius:16px;padding:0;width:min(540px,calc(100% - 28px));box-shadow:0 20px 70px #102b4c44"><div style="padding:20px"><div class="panelhead"><h3 id="modalTitle">Form</h3><button class="btn" onclick="closeModal()">Tutup</button></div><form id="modalForm" class="formgrid"></form></div></dialog>
+<div id="toast" style="position:fixed;bottom:85px;left:50%;transform:translateX(-50%);background:#173b70;color:white;padding:10px 15px;border-radius:10px;display:none;z-index:20;max-width:90%;box-shadow:0 8px 25px #0002"></div>
+<script>
+const NAV=[['dashboard','🏠','Dashboard'],['students','👥','Data Siswa'],['attendance','📋','Absensi'],['violations','🧭','Pembinaan'],['piket','🗓️','Jadwal Piket'],['order','🧹','Ketertiban'],['announcements','📢','Pengumuman'],['gallery','🖼️','Galeri Kelas'],['reports','📊','Laporan']];
+const DAYS=['Senin','Selasa','Rabu','Kamis','Jumat','Sabtu'];
+const seed={students:[{id:1,name:'Contoh Siswa A',class:'9C',status:'Aktif'},{id:2,name:'Contoh Siswa B',class:'9C',status:'Aktif'},{id:3,name:'Contoh Siswa C',class:'9C',status:'Aktif'}],attendance:[],violations:[],piket:[{day:'Senin',names:'Contoh Siswa A, Contoh Siswa B',task:'Menyapu dan merapikan meja'},{day:'Selasa',names:'Contoh Siswa B, Contoh Siswa C',task:'Papan tulis dan tempat sampah'},{day:'Rabu',names:'Contoh Siswa A, Contoh Siswa C',task:'Menyapu dan merapikan meja'},{day:'Kamis',names:'Contoh Siswa A, Contoh Siswa B',task:'Papan tulis dan tempat sampah'},{day:'Jumat',names:'Contoh Siswa B, Contoh Siswa C',task:'Kebersihan menyeluruh'},{day:'Sabtu',names:'Contoh Siswa A, Contoh Siswa C',task:'Merapikan alat kelas'}],orders:[{id:1,date:new Date().toISOString().slice(0,10),items:['Lantai bersih','Meja dan kursi rapi','Papan tulis bersih','Tempat sampah tertata'],note:'Contoh evaluasi DEMO'}],announcements:[{id:1,title:'Selamat datang di SIKAP Kelas 9C',category:'Informasi',date:new Date().toISOString().slice(0,10),body:'Ini pengumuman contoh. Ganti dengan informasi kelas yang benar setelah sistem online siap.'}],photos:[]};
+let data;try{data=JSON.parse(localStorage.getItem('sikap9c_demo_v1'))||structuredClone(seed)}catch(e){data=JSON.parse(JSON.stringify(seed))}
+function save(){localStorage.setItem('sikap9c_demo_v1',JSON.stringify(data));renderAll()}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function toast(t){let el=document.getElementById('toast');el.textContent=t;el.style.display='block';setTimeout(()=>el.style.display='none',2400)}
+function todayName(){return new Intl.DateTimeFormat('id-ID',{weekday:'long',timeZone:'Asia/Jakarta'}).format(new Date())}
+function navHTML(){return NAV.map(([id,ico,name])=>`<button class="navbtn ${id==='dashboard'?'active':''}" data-page="${id}" onclick="go('${id}')"><span class="ico">${ico}</span><span>${name}</span></button>`).join('')}
+document.getElementById('sideNav').innerHTML='<div class="navlabel">MENU UTAMA</div>'+navHTML()+'<div class="sidebar-note"><strong>SIKAP · 9C</strong><br>Versi DEMO di perangkat ini. Jangan gunakan untuk data pribadi asli.</div>';
+document.getElementById('mobileNav').innerHTML=navHTML();
+function go(id){document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.id==='page-'+id));document.querySelectorAll('.navbtn').forEach(x=>x.classList.toggle('active',x.dataset.page===id));if(id==='students')renderStudents();if(id==='attendance')renderAttendance();if(id==='violations')renderViolations();if(id==='piket')renderPiket();if(id==='order')renderOrder();if(id==='announcements')renderAnnouncements();if(id==='gallery')renderGallery();window.scrollTo({top:0,behavior:'smooth'})}
+function updateClock(){let now=new Date();document.getElementById('clock').textContent=new Intl.DateTimeFormat('id-ID',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false,timeZone:'Asia/Jakarta'}).format(now)+' WIB';document.getElementById('date').textContent=new Intl.DateTimeFormat('id-ID',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Jakarta'}).format(now)}
+setInterval(updateClock,1000);updateClock();
+function renderDashboard(){document.getElementById('statStudents').textContent=data.students.filter(s=>s.status==='Aktif').length;let today=new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Jakarta'});let a=data.attendance.filter(a=>a.date===today);document.getElementById('statPresent').textContent=a.filter(a=>a.status==='Hadir').length;document.getElementById('statCases').textContent=data.violations.length;document.getElementById('statAnnouncements').textContent=data.announcements.length;document.getElementById('dashboardAnnouncements').innerHTML=data.announcements.slice().reverse().slice(0,3).map(a=>`<div class="listitem"><div class="bullet">⚑</div><div><strong>${esc(a.title)}</strong><p>${esc(a.category)} · ${esc(a.date)}</p><p>${esc(a.body)}</p></div></div>`).join('')||'<div class="empty">Belum ada pengumuman</div>';document.getElementById('dashboardOrder').innerHTML=(data.orders.slice(-1).map(o=>`<div class="listitem"><div class="bullet">☑</div><div><strong>Evaluasi terakhir · ${esc(o.date)}</strong><p>${esc(o.items.join(' · '))}</p><p>${esc(o.note)}</p></div></div>`).join(''))||'<div class="empty">Belum ada evaluasi</div>';document.getElementById('dashboardPiket').innerHTML=data.piket.map(p=>`<div class="day ${p.day===todayName()?'today':''}"><strong>${esc(p.day)} ${p.day===todayName()?'· Hari ini':''}</strong><span>${esc(p.names)}</span></div>`).join('');document.getElementById('dashboardActivity').innerHTML=[{t:'Data siswa',d:data.students.length+' catatan siswa'},{t:'Jadwal piket',d:data.piket.length+' hari terjadwal'},{t:'Pengumuman',d:data.announcements.length+' pengumuman'}].map(x=>`<div class="listitem"><div class="bullet">↻</div><div><strong>${x.t}</strong><p>${x.d}</p></div></div>`).join('')}
+function renderStudents(){let q=(document.getElementById('studentSearch')?.value||'').toLowerCase(),st=document.getElementById('studentStatus')?.value||'';let rows=data.students.filter(s=>s.name.toLowerCase().includes(q)&&(!st||s.status===st));document.getElementById('studentRows').innerHTML=rows.map(s=>`<tr><td>${esc(s.name)}</td><td>${esc(s.class)}</td><td><span class="pill ${s.status==='Aktif'?'':'demo'}">${esc(s.status)}</span></td><td><button class="btn" onclick="editStudent(${s.id})">Edit</button> <button class="btn danger" onclick="deleteItem('students',${s.id})">Hapus</button></td></tr>`).join('')||'<tr><td colspan="4" class="empty">Data siswa tidak ditemukan</td></tr>'}
+function renderAttendance(){let date=document.getElementById('attendanceDate');if(!date.value)date.value=new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Jakarta'});let rows=data.attendance.filter(a=>a.date===date.value);['Hadir','Sakit','Izin','Alpa'].forEach(s=>document.getElementById('a'+s).textContent=rows.filter(a=>a.status===s).length);document.getElementById('attendanceRows').innerHTML=rows.map(a=>`<tr><td>${esc(data.students.find(s=>s.id===a.studentId)?.name||'Siswa nonaktif')}</td><td>${esc(a.date)}</td><td>${esc(a.status)}</td><td><button class="btn" onclick="editAttendance(${a.id})">Edit</button> <button class="btn danger" onclick="deleteItem('attendance',${a.id})">Hapus</button></td></tr>`).join('')||'<tr><td colspan="4" class="empty">Belum ada catatan untuk tanggal ini</td></tr>'}
+function renderViolations(){let q=(document.getElementById('violationSearch')?.value||'').toLowerCase();document.getElementById('violationRows').innerHTML=data.violations.filter(v=>((data.students.find(s=>s.id===v.studentId)?.name||'').toLowerCase()+' '+v.category.toLowerCase()).includes(q)).map(v=>`<tr><td>${esc(data.students.find(s=>s.id===v.studentId)?.name||'Siswa nonaktif')}</td><td>${esc(v.date)}</td><td>${esc(v.category)}</td><td>${esc(v.note)}</td><td><button class="btn" onclick="editViolation(${v.id})">Edit</button> <button class="btn danger" onclick="deleteItem('violations',${v.id})">Hapus</button></td></tr>`).join('')||'<tr><td colspan="5" class="empty">Belum ada catatan</td></tr>'}
+function renderPiket(){document.getElementById('piketGrid').innerHTML=data.piket.map(p=>`<div class="day ${p.day===todayName()?'today':''}"><strong>${esc(p.day)} ${p.day===todayName()?'· Hari ini':''}</strong><p>${esc(p.names)}</p><span>${esc(p.task)}</span><p><button class="btn" onclick="editPiket('${p.day}')">Edit</button></p></div>`).join('')}
+function renderOrder(){document.getElementById('orderList').innerHTML=data.orders.slice().reverse().map(o=>`<div class="listitem"><div class="bullet">☑</div><div style="flex:1"><strong>Evaluasi ${esc(o.date)}</strong><p>${esc(o.items.join(' · '))}</p><p>${esc(o.note)}</p><button class="btn danger" onclick="deleteItem('orders',${o.id})">Hapus</button></div></div>`).join('')||'<div class="empty">Belum ada evaluasi</div>'}
+function renderAnnouncements(){let q=(document.getElementById('announcementSearch')?.value||'').toLowerCase();document.getElementById('announcementList').innerHTML=data.announcements.filter(a=>(a.title+' '+a.body+' '+a.category).toLowerCase().includes(q)).slice().reverse().map(a=>`<div class="listitem"><div class="bullet">⚑</div><div style="flex:1"><strong>${esc(a.title)}</strong><p>${esc(a.category)} · ${esc(a.date)}</p><p>${esc(a.body)}</p><button class="btn" onclick="editAnnouncement(${a.id})">Edit</button> <button class="btn danger" onclick="deleteItem('announcements',${a.id})">Hapus</button></div></div>`).join('')||'<div class="empty">Tidak ada pengumuman</div>'}
+function renderGallery(){let el=document.getElementById('galleryGrid');el.innerHTML=data.photos.map(p=>`<div class="panel"><img src="${p.url}" alt="${esc(p.name)}" style="width:100%;height:145px;object-fit:cover;border-radius:9px"><strong>${esc(p.name)}</strong><p class="muted small">${esc(p.date)}</p><button class="btn danger" onclick="deletePhoto(${p.id})">Hapus</button></div>`).join('')||'<div class="galleryplaceholder"><div><div style="font-size:35px">▧</div><strong>Belum ada foto kelas</strong><p class="small">Pilih foto yang sudah mendapat izin penggunaan untuk mencoba galeri DEMO</p></div></div>'}
+function addPhotos(e){[...e.target.files].forEach(f=>{if(f.size>1500000){toast('Ukuran tiap foto DEMO maksimal 1,5 MB');return}let r=new FileReader();r.onload=()=>{data.photos.push({id:Date.now()+Math.random(),name:f.name,date:new Date().toLocaleDateString('id-ID'),url:r.result});try{save()}catch(err){toast('Penyimpanan browser penuh. Hapus beberapa foto.')}};r.readAsDataURL(f)});e.target.value=''}
+function deletePhoto(id){if(confirm('Hapus foto ini dari galeri DEMO?')){data.photos=data.photos.filter(p=>p.id!==id);save()}}
+function deleteItem(type,id){if(!confirm('Yakin ingin menghapus catatan ini?'))return;data[type]=data[type].filter(x=>x.id!==id);save();toast('Catatan DEMO dihapus')}
+function field(name,label,type='text',value='',opts=null,wide=false){let html=type==='select'?`<select name="${name}" required>${opts.map(o=>`<option ${o===value?'selected':''}>${esc(o)}</option>`).join('')}</select>`:type==='textarea'?`<textarea name="${name}" rows="3" required>${esc(value)}</textarea>`:`<input name="${name}" type="${type}" value="${esc(value)}" ${type==='date'?'required':''} ${type==='text'?'required':''}>`;return `<label class="${wide?'wide':''}">${label}${html}</label>`}
+function showForm(title,fields,submit){document.getElementById('modalTitle').textContent=title;let form=document.getElementById('modalForm');form.innerHTML=fields.join('')+'<div class="wide" style="display:flex;justify-content:flex-end;gap:8px"><button type="button" class="btn" onclick="closeModal()">Batal</button><button class="btn primary" type="submit">Simpan</button></div>';form.onsubmit=e=>{e.preventDefault();submit(Object.fromEntries(new FormData(form)));closeModal();save();toast('Perubahan DEMO tersimpan di browser')};document.getElementById('modal').showModal()}
+function closeModal(){document.getElementById('modal').close()}
+function openStudentForm(){showForm('Tambah siswa',[field('name','Nama lengkap'),field('class','Kelas','text','9C'),field('status','Status','select','Aktif',['Aktif','Nonaktif'])],v=>data.students.push({id:Date.now(),...v}))}
+function editStudent(id){let s=data.students.find(x=>x.id===id);showForm('Edit siswa',[field('name','Nama lengkap','text',s.name),field('class','Kelas','text',s.class),field('status','Status','select',s.status,['Aktif','Nonaktif'])],v=>Object.assign(s,v))}
+function studentOptions(selected){return data.students.map(s=>`<option value="${s.id}" ${String(s.id)===String(selected)?'selected':''}>${esc(s.name)}</option>`).join('')}
+function openAttendanceForm(existing=null){if(!data.students.length){toast('Tambahkan data siswa terlebih dahulu');return}let dt=document.getElementById('attendanceDate').value||new Date().toISOString().slice(0,10);showForm(existing?'Edit absensi':'Catat absensi',[`<label class="wide">Siswa<select name="studentId" required>${studentOptions(existing?.studentId)}</select></label>`,field('date','Tanggal','date',existing?.date||dt),field('status','Status','select',existing?.status||'Hadir',['Hadir','Sakit','Izin','Alpa'])],v=>{v.studentId=Number(v.studentId);let duplicate=data.attendance.find(a=>a.studentId===v.studentId&&a.date===v.date&&a.id!==existing?.id);if(duplicate){toast('Absensi siswa pada tanggal tersebut sudah ada; gunakan Edit');return}if(existing)Object.assign(existing,v);else data.attendance.push({id:Date.now(),...v})})}
+function editAttendance(id){openAttendanceForm(data.attendance.find(a=>a.id===id))}
+function openViolationForm(existing=null){if(!data.students.length){toast('Tambahkan data siswa terlebih dahulu');return}showForm(existing?'Edit catatan pembinaan':'Tambah catatan pembinaan',[`<label class="wide">Siswa<select name="studentId" required>${studentOptions(existing?.studentId)}</select></label>`,field('date','Tanggal kejadian','date',existing?.date||new Date().toISOString().slice(0,10)),field('category','Kategori','select',existing?.category||'Kedisiplinan',['Kedisiplinan','Kebersihan','Tanggung jawab','Lainnya']),field('note','Catatan objektif','textarea',existing?.note||'',null,true),field('followup','Tindak lanjut','text',existing?.followup||'',null,true)],v=>{v.studentId=Number(v.studentId);if(existing)Object.assign(existing,v);else data.violations.push({id:Date.now(),...v})})}
+function editViolation(id){openViolationForm(data.violations.find(v=>v.id===id))}
+function openPiketForm(day=null){let p=data.piket.find(x=>x.day===day);showForm(p?'Edit jadwal piket':'Tambah jadwal piket',[field('day','Hari','select',p?.day||'Senin',DAYS),field('names','Nama anggota piket','text',p?.names||'',null,true),field('task','Tugas','text',p?.task||'Menyapu dan merapikan meja',null,true)],v=>{let old=data.piket.find(x=>x.day===v.day);if(old)Object.assign(old,v);else data.piket.push(v)})}
+function editPiket(day){openPiketForm(day)}
+function openOrderForm(){showForm('Evaluasi ketertiban',[field('date','Tanggal','date',new Date().toISOString().slice(0,10)),field('items','Indikator yang terpenuhi','text','Lantai bersih, Meja dan kursi rapi',null,true),field('note','Catatan dan tindak lanjut','textarea','',null,true)],v=>data.orders.push({id:Date.now(),date:v.date,items:v.items.split(',').map(x=>x.trim()).filter(Boolean),note:v.note}))}
+function openAnnouncementForm(existing=null){showForm(existing?'Edit pengumuman':'Buat pengumuman',[field('title','Judul','text',existing?.title||'',null,true),field('category','Kategori','select',existing?.category||'Informasi',['Informasi','Kegiatan','Jadwal','Penting']),field('date','Tanggal publikasi','date',existing?.date||new Date().toISOString().slice(0,10)),field('body','Isi pengumuman','textarea',existing?.body||'',null,true)],v=>{if(existing)Object.assign(existing,v);else data.announcements.push({id:Date.now(),...v})})}
+function editAnnouncement(id){openAnnouncementForm(data.announcements.find(a=>a.id===id))}
+function exportCSV(type){let arr=data[type]||[];if(!arr.length){toast('Tidak ada data untuk diekspor');return}let headers=Object.keys(arr[0]);let csv=[headers.join(','),...arr.map(o=>headers.map(h=>'"'+String(Array.isArray(o[h])?o[h].join('; '):o[h]??'').replace(/"/g,'""')+'"').join(','))].join('\r\n');let blob=new Blob(['\ufeff'+csv],{type:'text/csv;charset=utf-8;'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='sikap-9c-'+type+'.csv';a.click();URL.revokeObjectURL(url);toast('File CSV dibuat')}
+function resetDemo(){if(confirm('Hapus semua perubahan dan kembalikan data contoh?')){data=JSON.parse(JSON.stringify(seed));save();toast('Data DEMO direset')}}
+document.getElementById('attendanceDate').addEventListener('change',renderAttendance);
+function renderAll(){renderDashboard();renderStudents();renderAttendance();renderViolations();renderPiket();renderOrder();renderAnnouncements();renderGallery()}
+renderAll();
+</script>
+</body></html>
